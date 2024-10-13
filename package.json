@@ -9,6 +9,11 @@
   "author": "mua-th",
   "license": "ISC",
   "bin": {
-  "pokegame": "index.js"
-}
+    "pokegame": "index.js"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module" 
 }
