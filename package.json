@@ -1,0 +1,14 @@
+{
+  "name": "pokigame",
+  "version": "1.0.0",
+  "description": "this is a pokemon game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "mua-th",
+  "license": "ISC",
+  "bin": {
+  "pokegame": "index.js"
+}
+}
