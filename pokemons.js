@@ -1,23 +1,14 @@
+const getPokemons = async (limit = 5) => { 
+  try {
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`);
+      
+      
+      const json = await response.json();
+      return json.results.map(pokemon => pokemon.name);
+  } catch (error) {
+      console.error("Error fetching pokemons:", error.message);
+      return [];
+  }
+}
 
-const result = []
- const getPokemons = async ()=> { 
-    try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=5");
-        if (!response.ok) {
-          throw new Error(`Response status: ${response.status}`);
-        }
-    
-        
-        const json = await response.json();
-        json.results.forEach(element => {
-            result.push(element.name)          
-        });
-        //console.log(result);
-        return result;
-      } catch (error) {
-        console.error(error.message);
-      }}
-
-     //console.log(getPokemons())
-export default getPokemons; 
-  
+export default getPokemons;
