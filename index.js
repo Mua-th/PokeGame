@@ -7,6 +7,7 @@ import { getRandomItem, attack } from './utils.js';
 const RED = '\x1b[31m';
 const GREEN = '\x1b[32m';
 const RESET = '\x1b[0m';
+
 async function playPokemonGame() {
     console.log("------------------ POKEMON GAME ------------------");
    
