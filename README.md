@@ -77,6 +77,3 @@ If you encounter any issues:
 
 If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
 
-## License
-
-This project is licensed under the ISC License.
